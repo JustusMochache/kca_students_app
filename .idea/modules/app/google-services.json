@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "104832108976",
+    "firebase_url": "https://kca-student-app.firebaseio.com",
+    "project_id": "kca-student-app",
+    "storage_bucket": "kca-student-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:104832108976:android:1fcc96a3d8b912232f2e75",
+        "android_client_info": {
+          "package_name": "com.example.kca_student_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "104832108976-8r07366v6v84cstec19hg18uppcrqods.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.kca_student_app",
+            "certificate_hash": "568e616a59f1b70422025112c47ed6aa49197db3"
+          }
+        },
+        {
+          "client_id": "104832108976-j00akevka6sqmeh01b4r56vc37cd79nm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgeNgM9KInvCHI-VeuJUm6-M2q1ayx5z4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "104832108976-j00akevka6sqmeh01b4r56vc37cd79nm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

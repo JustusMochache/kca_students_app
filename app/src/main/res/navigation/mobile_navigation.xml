@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.kca_student_app.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.kca_student_app.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.kca_student_app.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+
+    <fragment
+        android:id="@+id/nav_feedback"
+        android:name="com.example.kca_student_app.ui.feedback.FeedbackFragment"
+        android:label="@string/menu_feedback"
+        tools:layout="@layout/feedback_fragment" />
+
+    <fragment
+        android:id="@+id/nav_Rate_us"
+        android:name="com.example.kca_student_app.ui.rate.RateUsFragment"
+        android:label="@string/rate_us"
+        tools:layout="@layout/rate_fragment" />
+
+    <fragment
+        android:id="@+id/nav_website"
+        android:name="com.example.kca_student_app.ui.website.WebsiteLinkFragment"
+        android:label="@string/website"
+        tools:layout="@layout/website_fragment" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.kca_student_app.ui.share.ShareToFragment"
+        android:label="@string/share"
+        tools:layout="@layout/share_fragment" />
+
+</navigation>

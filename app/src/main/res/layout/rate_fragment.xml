@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rate_us"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.rate.RateUsFragment">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="308dp"
+        android:layout_height="306dp"
+        android:orientation="vertical"
+        android:padding="2dip"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.413">
+
+        <TextView
+            android:id="@+id/rank_dialog_text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Rate KCA App"
+            android:textColor="#053378"
+            android:textSize="18sp" />
+
+        <RatingBar
+            android:id="@+id/dialog_ratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:clickable="true"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1.0" />
+
+        <Button
+
+            android:id="@+id/rank_dialog_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dip"
+            android:background="@drawable/rounded_corner_feedback"
+            android:focusable="false"
+            android:text="Update"
+            android:textColor="@color/colorWhite"
+            android:textSize="13dp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="107dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/rating"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

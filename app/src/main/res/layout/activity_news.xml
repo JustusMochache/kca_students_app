@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.NewsActivity">
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="337dp"
+        android:layout_height="256dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <EditText
+        android:id="@+id/editfirstname"
+        android:layout_width="242dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Firstname"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/imageButton"
+        app:layout_constraintStart_toStartOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton" />
+
+    <EditText
+        android:id="@+id/editlastname"
+        android:layout_width="244dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="@+id/editfirstname"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editfirstname"
+        app:layout_constraintTop_toBottomOf="@+id/editfirstname" />
+
+    <Button
+        android:id="@+id/btnInset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rounded_corner_button"
+        android:text="Insert"
+        app:layout_constraintEnd_toEndOf="@+id/editlastname"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/editlastname"
+        app:layout_constraintTop_toBottomOf="@+id/editlastname" />
+</androidx.constraintlayout.widget.ConstraintLayout>

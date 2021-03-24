@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/newsView"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:contentDescription="TODO"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/nav_host_fragment"
+        app:srcCompat="@drawable/ic_baseline_event_note_24" />
+
+    <ImageView
+        android:id="@+id/calendarImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toEndOf="@+id/newsView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_calendar_today_24" />
+
+    <ImageView
+        android:id="@+id/notificationImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/news"
+        app:srcCompat="@drawable/ic_baseline_notifications_24" />
+
+    <ImageView
+        android:id="@+id/libraryImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/notificationImage"
+        app:layout_constraintTop_toBottomOf="@+id/calendar"
+        app:srcCompat="@drawable/ic_baseline_local_library_24" />
+
+    <ImageView
+        android:id="@+id/profileImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/notification"
+        app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/mapsImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="80dp"
+        app:layout_constraintStart_toEndOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/library"
+        app:srcCompat="@drawable/ic_baseline_map_24" />
+
+    <ImageView
+        android:id="@+id/socialImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/profile"
+        app:srcCompat="@drawable/ic_baseline_people_24" />
+
+    <ImageView
+        android:id="@+id/busEventsImage"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toEndOf="@+id/socialImage"
+        app:layout_constraintTop_toBottomOf="@+id/maps"
+        app:srcCompat="@drawable/ic_baseline_directions_bus_24" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="56dp" />
+
+    <TextView
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news"
+        app:layout_constraintEnd_toEndOf="@+id/newsView"
+        app:layout_constraintStart_toStartOf="@+id/newsView"
+        app:layout_constraintTop_toBottomOf="@+id/newsView" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications"
+        app:layout_constraintEnd_toEndOf="@+id/notificationImage"
+        app:layout_constraintStart_toStartOf="@+id/notificationImage"
+        app:layout_constraintTop_toBottomOf="@+id/notificationImage" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social"
+        app:layout_constraintEnd_toEndOf="@+id/socialImage"
+        app:layout_constraintStart_toStartOf="@+id/socialImage"
+        app:layout_constraintTop_toBottomOf="@+id/socialImage" />
+
+    <TextView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        app:layout_constraintEnd_toEndOf="@+id/calendarImage"
+        app:layout_constraintStart_toStartOf="@+id/calendarImage"
+        app:layout_constraintTop_toBottomOf="@+id/calendarImage" />
+
+    <TextView
+        android:id="@+id/library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library"
+        app:layout_constraintEnd_toEndOf="@+id/libraryImage"
+        app:layout_constraintStart_toStartOf="@+id/libraryImage"
+        app:layout_constraintTop_toBottomOf="@+id/libraryImage" />
+
+    <TextView
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        app:layout_constraintEnd_toEndOf="@+id/mapsImage"
+        app:layout_constraintStart_toStartOf="@+id/mapsImage"
+        app:layout_constraintTop_toBottomOf="@+id/mapsImage" />
+
+    <TextView
+        android:id="@+id/busEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Events"
+        app:layout_constraintEnd_toEndOf="@+id/busEventsImage"
+        app:layout_constraintTop_toBottomOf="@+id/busEventsImage" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

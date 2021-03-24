@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/newsView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toStartOf="@+id/calendarImage"
+        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/newspaper" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/calendarImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/calendar" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/notificationImage"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="70dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toEndOf="@+id/library"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@+id/news"
+        app:layout_constraintTop_toTopOf="@+id/calendar"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bell" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/libraryImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="140dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toEndOf="@+id/calendarImage"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="41dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/library" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toEndOf="@+id/newsView"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/newsView"
+        app:layout_constraintTop_toBottomOf="@+id/newsView"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/man" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/mapsImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="16dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/social"
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/location" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/socialImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toEndOf="@+id/notificationImage"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="@+id/notificationImage"
+        app:layout_constraintTop_toBottomOf="@+id/notificationImage"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/network" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/busEventsImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/colorGrey"
+        app:cardCornerRadius="50dp"
+        app:cardElevation="-17dp"
+        app:layout_constraintEnd_toEndOf="@+id/libraryImage"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/libraryImage"
+        app:layout_constraintTop_toBottomOf="@+id/library"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="62dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/bus" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/news"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/newsView"
+        app:layout_constraintStart_toStartOf="@+id/newsView"
+        app:layout_constraintTop_toBottomOf="@+id/newsView" />
+
+    <TextView
+        android:id="@+id/notification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notifications"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/notificationImage"
+        app:layout_constraintStart_toStartOf="@+id/notificationImage"
+        app:layout_constraintTop_toBottomOf="@+id/notificationImage" />
+
+    <TextView
+        android:id="@+id/profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/profile"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/profileImage"
+        app:layout_constraintStart_toStartOf="@+id/profileImage"
+        app:layout_constraintTop_toBottomOf="@+id/profileImage" />
+
+    <TextView
+        android:id="@+id/social"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/social"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/socialImage"
+        app:layout_constraintStart_toStartOf="@+id/socialImage"
+        app:layout_constraintTop_toBottomOf="@+id/socialImage" />
+
+    <TextView
+        android:id="@+id/calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calendar"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/calendarImage"
+        app:layout_constraintStart_toStartOf="@+id/calendarImage"
+        app:layout_constraintTop_toBottomOf="@+id/calendarImage" />
+
+    <TextView
+        android:id="@+id/library"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Library"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/libraryImage"
+        app:layout_constraintStart_toStartOf="@+id/libraryImage"
+        app:layout_constraintTop_toBottomOf="@+id/libraryImage" />
+
+    <TextView
+        android:id="@+id/maps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Maps"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/mapsImage"
+        app:layout_constraintStart_toStartOf="@+id/mapsImage"
+        app:layout_constraintTop_toBottomOf="@+id/mapsImage" />
+
+    <TextView
+        android:id="@+id/busEvents"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bus Events"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="@+id/busEventsImage"
+        app:layout_constraintStart_toStartOf="@+id/busEventsImage"
+        app:layout_constraintTop_toBottomOf="@+id/busEventsImage" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

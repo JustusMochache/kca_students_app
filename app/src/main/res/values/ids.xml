@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="fullscreen_content" type="id" />
+    <item name="fullscreen_content_controls" type="id" />
+    <item name="settings_container" type="id" />
+    <item name="rank_dialog_text1" type="id" />
+    <item name="dialog_ratingbar" type="id" />
+    <item name="rank_dialog_button" type="id" />
+    <item name="rank_button" type="id" />
+    <item name="addNoteButton" type="id" />
+    <item name="noteEditText" type="id" />
+    <item name="datePicker" type="id" />
+</resources>
